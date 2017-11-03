@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп-каталог</title>
+	<link href="css/normalize.css" rel="stylesheet">
+    <title>HTML Academy: Барбершоп-каталог</title>
   </head>
   <body>
     <header class="catalog-header">
@@ -32,72 +33,104 @@
           </ul>
         </nav>
       </header>
-      <section>
-        <section>
-          <h3>ПРОИЗВОДИТЕЛИ:</h3>
-          <ul>
-            <li><input type="checkbox" /><span>Baxter of California</span></li>
-            <li><input type="checkbox" /><span>Mr natty</span></li>
-            <li><input type="checkbox" /><span>Suavecito</span></li>
-            <li><input type="checkbox" /><span>Malin+Goetz</span></li>
-            <li><input type="checkbox" /><span>Murray’s</span></li>
-            <li><input type="checkbox" /><span>American Crew</span></li>
-          </ul>
+      <section class="gds-selectors">
+        <section class="gds-manufacturer">
+          <h3 class="gds-manufacturer__title">ПРОИЗВОДИТЕЛИ:</h3>
+		  <form class="gds-manufacturer__form">
+		     <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Baxter of California" checked /><label class="gds-manufacturer__label" for="Baxter of California">Baxter of California</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Mr natty" /><label class="gds-manufacturer__label" for="Mr natty">Mr natty</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Suavecito" checked /><label class="gds-manufacturer__label" for="Suavecito">Suavecito</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Malin+Goetz" /><label class="gds-manufacturer__label" for="Malin+Goetz">Malin+Goetz</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Murray’s" /><label class="gds-manufacturer__label" for="Murray’s">Murray’s</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="American Crew" checked /><label class="gds-manufacturer__label" for="American Crew">American Crew</label>
+		  </form>
         </section>
-        <section>
-          <h3>ГРУППЫ ТОВАРОВ:</h3>
-          <ul>
-            <li><input type="radio" /><span>Бритвенные принадлежности</span></li>
-            <li><input type="radio" /><span>Средства для ухода</span></li>
-            <li><input type="radio" /><span>Аксессуары</span></li>
-          </ul>
+        <section class="gds-groups">
+          <h3 class="gds-groups__title">ГРУППЫ ТОВАРОВ:</h3>
+		  <form class="gds-groups__form">
+		     <input class="gds-groups__radio" type="radio" name="gds-groups" id="Shaving accessories" /><label for="Shaving accessories">Бритвенные принадлежности</label>
+			 <input class="gds-groups__radio" type="radio" name="gds-groups" id="Means for care" checked /><label for="Means for care">Средства для ухода</label>
+			 <input class="gds-groups__radio" type="radio" name="gds-groups" id="Accessories" /><label for="Accessories">Аксессуары</label>
+		  </form>
         </section>
-        <button>Показать</button>
+        <button class="gds-selectors__btn">Показать</button>
       </section>
-      <section>
+      <section class="gds-cards">
         <h2 class="visually-hidden"></h2>
-        <div>
-          <img />
-          <span></span>
-          <button></button>
-        </div>
-        <div>
-          <img />
-          <span></span>
-          <button></button>
-        </div>
-        <div>
-          <img />
-          <span></span>
-          <button></button>
-        </div>
-        <div>
-          <img />
-          <span></span>
-          <button></button>
-        </div>
-        <div>
-          <img />
-          <span></span>
-          <button></button>
-        </div>
-        <div>
-          <img />
-          <span></span>
-          <button></button>
-        </div>
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Набор для путешествий "Baxter of California"</p>
+		    <span class="gds-card__price">2900 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div>
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Увлажняющий кондиционер "Baxter of California"</p>
+		    <span class="gds-card__price">750 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Гель для волос "Suavecito"</p>
+		    <span class="gds-card__price">290 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Глина для укладки волос "American Crew"</p>
+		    <span class="gds-card__price">500 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Гель для волос "American Crew"</p>
+		    <span class="gds-card__price">300 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Набор для бритья "Baxter of California"</p>
+		    <span class="gds-card__price"> 3900 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 		
       </section>
-      <nav class="page-nav">
-        <ul>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-        </ul>
+      <nav class="pages-nav">
+        <a class="pages-nav__page-link" href="#">1</a>
+		<a class="pages-nav__page-link" href="#">2</a>
+		<a class="pages-nav__page-link" href="#">3</a>
+		<a class="pages-nav__page-link" href="#">4</a>
       </nav>
     </main>
-    <footer>
-      
+    <footer class="main-footer">
+	
+	  <p class="footer-contacts">
+	     Барбершоп «Бородинский»<br>
+		 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+		 <a class="footer-contacts__link-map" href="map.html">Как нас найти?</a><br>
+		 Телефон: +7 (812) 666-02-66
+	  </p>
+	  <div class="footer-social">
+	     <b class="footer-social__befriend">Давайте Дружить!</b>
+		 <ul>
+		     <li><a class="footer-social__link-vk" href="#">Вконтакте</a></li>
+		     <li><a class="footer-social__link-fb" href="#">FaceBook</a></li>
+		     <li><a class="footer-social__link-in" href="#">Instagram</a></li>
+		 </ul>
+         <p class="footer-copyright">
+		     Разработано:
+			 <a class="footer-copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+		 </p>
+	  </div>
     </footer>
+	<section class="modal-login">
+	   <h2 class="modal-login__title">Личный кабинет</h2>
+	   <p class="modal-login__text">Введите свой логин и пароль.</p>
+	   <!-- Место для формы -->
+	   <span class="modal-close">x</span>
+	</section>
+	<section class="modal-map">
+	   <h2 class="modal-map__title">Как до нас добраться</h2>
+	   <span class="modal-close">x</span>
+	</section>
   </body>
 </html>
