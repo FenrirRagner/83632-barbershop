@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<link href="css/normalize.css" rel="stylesheet">
+    <title>HTML Academy: Барбершоп-каталог</title>
+  </head>
+  <body>
+    <header class="catalog-header">
+      <nav class="catalog-navigation">
+        <a class="catalog-hrader__logo"><img class="catalog-header__logo" src="img/catalog-logo.svg" alt="Логотип барбершопа"></a>
+        <ul class="cite-navigation">
+          <li class="cite-navigation__item"><a href="info.html">Информация</a></li>
+          <li class="cite-navigation__item"><a href="news.html">Новости</a></li>
+          <li class="cite-navigation__item"><a href="price.html">Прайс-лист</a></li>
+          <li class="cite-navigation__item"><a href="shop.html">Магазин</a></li>
+          <li class="cite-navigation__item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation__login-link">Вход</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Магазин Барбершопа "Бородинский"</h1>
+      <header class="shop-header">
+        <nav class="shop-navigation">
+          <h2 class="shop-navigation__title">Средства для ухода</h2>
+          <ul class="shop-navigation__items">
+            <li class="shop-navigation__item"><a href="index.html" class="shop-navigation__link">Главная</a></li>
+            <li class="shop-navigation__item"><a href="shop.html" class="shop-navigation__link">Магазин</a></li>
+            <li class="shop-navigation__item"><a href="#" class="shop-navigation__link">Средства для ухода</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="gds-selectors">
+        <section class="gds-manufacturer">
+          <h3 class="gds-manufacturer__title">ПРОИЗВОДИТЕЛИ:</h3>
+		  <form class="gds-manufacturer__form">
+		     <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Baxter of California" checked /><label class="gds-manufacturer__label" for="Baxter of California">Baxter of California</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Mr natty" /><label class="gds-manufacturer__label" for="Mr natty">Mr natty</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Suavecito" checked /><label class="gds-manufacturer__label" for="Suavecito">Suavecito</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Malin+Goetz" /><label class="gds-manufacturer__label" for="Malin+Goetz">Malin+Goetz</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="Murray’s" /><label class="gds-manufacturer__label" for="Murray’s">Murray’s</label>
+             <input class="gds-manufacturer__checkbox" type="checkbox" name="manufacturer" id="American Crew" checked /><label class="gds-manufacturer__label" for="American Crew">American Crew</label>
+		  </form>
+        </section>
+        <section class="gds-groups">
+          <h3 class="gds-groups__title">ГРУППЫ ТОВАРОВ:</h3>
+		  <form class="gds-groups__form">
+		     <input class="gds-groups__radio" type="radio" name="gds-groups" id="Shaving accessories" /><label for="Shaving accessories">Бритвенные принадлежности</label>
+			 <input class="gds-groups__radio" type="radio" name="gds-groups" id="Means for care" checked /><label for="Means for care">Средства для ухода</label>
+			 <input class="gds-groups__radio" type="radio" name="gds-groups" id="Accessories" /><label for="Accessories">Аксессуары</label>
+		  </form>
+        </section>
+        <button class="gds-selectors__btn">Показать</button>
+      </section>
+      <section class="gds-cards">
+        <h2 class="visually-hidden"></h2>
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Набор для путешествий "Baxter of California"</p>
+		    <span class="gds-card__price">2900 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div>
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Увлажняющий кондиционер "Baxter of California"</p>
+		    <span class="gds-card__price">750 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Гель для волос "Suavecito"</p>
+		    <span class="gds-card__price">290 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Глина для укладки волос "American Crew"</p>
+		    <span class="gds-card__price">500 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Гель для волос "American Crew"</p>
+		    <span class="gds-card__price">300 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 
+        <div class="gds-card">
+          <img class="gds-card__img" src="img/gds.jpg" />
+		  <p class="gds-card__description">Набор для бритья "Baxter of California"</p>
+		    <span class="gds-card__price"> 3900 РУБ.</span>
+            <button class="gds-card__buy">Купить</button>
+		</div> 		
+      </section>
+      <nav class="pages-nav">
+        <a class="pages-nav__page-link" href="#">1</a>
+		<a class="pages-nav__page-link" href="#">2</a>
+		<a class="pages-nav__page-link" href="#">3</a>
+		<a class="pages-nav__page-link" href="#">4</a>
+      </nav>
+    </main>
+    <footer class="main-footer">
+	
+	  <p class="footer-contacts">
+	     Барбершоп «Бородинский»<br>
+		 Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+		 <a class="footer-contacts__link-map" href="map.html">Как нас найти?</a><br>
+		 Телефон: +7 (812) 666-02-66
+	  </p>
+	  <div class="footer-social">
+	     <b class="footer-social__befriend">Давайте Дружить!</b>
+		 <ul>
+		     <li><a class="footer-social__link-vk" href="#">Вконтакте</a></li>
+		     <li><a class="footer-social__link-fb" href="#">FaceBook</a></li>
+		     <li><a class="footer-social__link-in" href="#">Instagram</a></li>
+		 </ul>
+         <p class="footer-copyright">
+		     Разработано:
+			 <a class="footer-copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+		 </p>
+	  </div>
+    </footer>
+	<section class="modal-login">
+	   <h2 class="modal-login__title">Личный кабинет</h2>
+	   <p class="modal-login__text">Введите свой логин и пароль.</p>
+	   <!-- Место для формы -->
+	   <span class="modal-close">x</span>
+	</section>
+	<section class="modal-map">
+	   <h2 class="modal-map__title">Как до нас добраться</h2>
+	   <span class="modal-close">x</span>
+	</section>
+  </body>
+</html>
